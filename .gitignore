@@ -1,0 +1,11 @@
+# built document
+**/*.pdf
+
+# what tha fuq are these
+**/*.dvi
+**/*.aux
+**/*.log
+
+# database for bibliographies
+**/*.blg
+**/*.bbl
