@@ -20,7 +20,6 @@ Webリンク
 
 > アドベントカレンダー2012。この中でも目を通したい記事があれば追記されたし。
 
-備考：
 - [12/19](http://neruko3114.blogspot.jp/2012/12/tex-latex-advent-calendar.html): newcommandなどについて解説
 - [12/22](http://neruko3114.blogspot.jp/2012/12/tex-latex-advent-calendar_23.html): styの使い方を簡単に書いてます
 
