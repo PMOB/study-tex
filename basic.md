@@ -1,3 +1,4 @@
+# coding: utf-8
 TeXの基本・簡単な扱い方
 ===========
 TeXの基本的なやつまとめ
@@ -65,6 +66,7 @@ TeXの開発者Donald E. Knuthの著書「The TeXbook」によると
 <a name="writing">
 書く
 -----------
+### 他マークアップ言語からの変換
 
 <a name="compile">
 コンパイル
