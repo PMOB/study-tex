@@ -67,6 +67,8 @@ TeXの開発者Donald E. Knuthの著書「The TeXbook」によると
 書く
 -----------
 ### 他マークアップ言語からの変換
+- [org-mode](http://orgmode.org/ja/)
+- Markdown
 
 <a name="compile">
 コンパイル
