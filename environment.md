@@ -4,6 +4,7 @@
 
 
 - 環境設定
+  - [mac+TeXstudioの場合](https://github.com/PMOB/study-tex/blob/master/env/mac.md)
 - パッケージマネージャ
 - コンパイル
   - latexコンパイラ
