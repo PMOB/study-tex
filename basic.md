@@ -78,5 +78,3 @@ TeXの開発者Donald E. Knuthの著書「The TeXbook」によると
 エディタ
 -----------
 リアルタイムプレビューとかできるGUIエディタがあるぞ！知らんけど
-
-- [Yet Another TeX mode](yatex.org)
