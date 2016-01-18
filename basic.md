@@ -8,6 +8,7 @@ TeXの基本的なやつまとめ
 - [コンパイル](#compile)
 - [エディタ](#editor)
 
+
 <a name="about">
 TeXとは
 -----------
@@ -61,10 +62,23 @@ TeXの開発者Donald E. Knuthの著書「The TeXbook」によると
 <a name="install">
 インストール
 -----------
+TeX/LaTeXはクロスプラットフォームのソフトウェアなので、
+Windows, OSX, Linux, BSDなどほとんどのOS上で動きます。
+ということで、分かる範囲でTeX/LaTeX（の処理系？）のインストールについて書いていきます。
+
+- OSX
+  - [MacTeX](http://qiita.com/hideaki_polisci/items/3afd204449c6cdd995c9)
+  便利なツールやよく使うパッケージがついててお得。ただ量がすごい。
+  - [BasicTeX](http://qiita.com/yyamnk/items/2da2791bcee82643984f)
+  「MacTeX重いわ」「無駄多いで」という人にはbasicTeX。
+  私はこっち使ってます（私が誰か気になったらblameしてね）。
+  basicTeXにtlmgrで必要になったパッケージを追加していくスタイル。
+
 
 <a name="writing">
 書く
 -----------
+
 ### 他マークアップ言語からの変換
 - [org-mode](http://orgmode.org/ja/)
 - Markdown
