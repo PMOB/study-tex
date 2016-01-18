@@ -35,6 +35,9 @@ Webリンク
 [TeX & LaTeX Advent Calendar 2015](http://www.adventar.org/calendars/929)
 > アドベントカレンダー2015。テーマは「今さら人に聞けない、TeXのキホン」。この中でも目を通したい記事があれば追記されたし。
 
+[LaTeX for Complete Novices](http://www.dickimaw-books.com/latex/novices/)
+> 英語ですが非常に詳しく載っていると思います。htmlとpdfあり。邦訳版ご存知でしたら追記願います。
+
 
 書籍
 -----------
