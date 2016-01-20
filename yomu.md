@@ -18,6 +18,8 @@
 
 ※documentclassにjsbookを使うヤーツを想定
 
+※基本的に前回のフォーマットと同じという形で加筆していきます
+
 <a name="head">
 記事タイトル、著者、要約
 -----------
@@ -26,6 +28,8 @@
 \chapter{タイトル} % 第XX章 タイトル みたいになる
 
 \begin{flushright}名前\end{flushright} % 右側にちっちゃく表示される
+
+\thispagestyle{empty} % pagestyleをemptyにすることでページ番号を消す
 
 \begin{abstract}
 概要 とか, はじめに とかをここに書く
@@ -61,13 +65,44 @@
 <a name="image">
 画像
 -----------
-
-
+```
+\begin{figure}[位置指定]
+  \centering
+  \includegraphics[clip, width=ここにサイズを書く]{画像.jpg}
+  \caption{これは画像です}
+\end{figure}
+```
+- 位置指定に関しては, `h, t, b, p`のオプションがある
+- サイズは`cm`だろうと`mm`だろうと何でも良いかと思う
+- 画像が大きすぎてはみ出るとかは避けたいので，
+サイズの上限の設定は必要?
+- issue立てときます
 
 <a name="table">
 表
 -----------
 
+```
+\begin{table}[位置指定]
+  \begin{tabular}{c|c|c} 
+    \hline
+    name  & author & latest version(2016/01/20)\\
+    \hline \hline
+    Linux Kernel & Linus Torvalds & 4.3.3 \\
+    Star Wars & George Lucas & ep7 \\
+    \hline
+  \end{tabular}
+\end{table}
+```
+
+みたいな
+
+- 表のフォーマットに関しては自由でいいだろうか..?
+  - ex: 絶対四角で囲うとか，ここは二重線にする〜とか
+- longtableってのもあるらしい
+- 個人的にはtableを使うことが多いですが，
+違いがよく分かってません
+- issue立てときます
 
 
 <a name="code">
@@ -77,13 +112,16 @@
 - listings or verbatim
 - 2015文化祭の部誌ではlistingsを使いました
 - listingsは外部からstyファイルを入れた記憶...?
+- issue立てときます
 
 <a name="add_fonts">
 フォントの追加
 -----------
 
-
+- 求む知見
 
 <a name="add_sty">
 独自スタイルの追加
 -----------
+
+- 求む知見
