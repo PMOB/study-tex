@@ -4,11 +4,11 @@ TeXの基本的なやつまとめ
 
 - [TeXとは](#about)
 - [インストール](#install)
-- [書く](#writing)
+- [書く](#intro)
 - [エディタ](#editor)
 
 
-<a name="about">
+<a name="about"></a>
 TeXとは
 -----------
 TeXは1978年に開発された組版システム（typesetting system）です。
@@ -58,7 +58,7 @@ TeXの開発者Donald E. Knuthの著書「The TeXbook」によると
 ということで「テック」と呼ぶのが無難だと思うぞ！
 
 
-<a name="install">
+<a name="install"></a>
 インストール
 -----------
 TeX/LaTeXはクロスプラットフォームのソフトウェアなので、
@@ -74,7 +74,7 @@ Windows, OSX, Linux, BSDなどほとんどのOS上で動きます。
   basicTeXにtlmgrで必要になったパッケージを追加していくスタイル。
 
 
-<a name="writing">
+<a name="intro"></a>
 書く
 -----------
 インストールは済んだでしょうか。
@@ -396,7 +396,7 @@ bibについて書くかも
 - [org-mode](http://orgmode.org/ja/)
 - Markdown
 
-<a name="editor">
+<a name="editor"></a>
 エディタ
 -----------
 リアルタイムプレビューとかできるGUIエディタがあるぞ！知らんけど
