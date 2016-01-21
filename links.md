@@ -12,6 +12,9 @@ Webページなら何年の記事か添えていただけるとハッピー
 
 Webリンク
 -----------
+[l2tabu](http://ctan.org/tex-archive/info/l2tabu/)
+> LaTeX2eを使う際のタブー。英/仏/独/伊/スペイン語があります
+
 [使ってあはいけないLaTeXのコマンド・パッケージ](http://ichiro-maruta.blogspot.jp/2013/03/latex.html)(Mar/2013)
 > latexの最近の書き方について。数式はalign環境使えよみたいな
 
