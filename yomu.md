@@ -14,6 +14,7 @@
 - [ソースコード](#code)
 - [フォントの追加](#add_fonts)
 - [独自スタイルの追加](#add_sty)
+- [編纂について](#compilation_book)
 
 
 ※documentclassにjsbookを使うヤーツを想定
@@ -24,7 +25,7 @@
 記事タイトル、著者、要約
 -----------
 
-```
+```tex
 \chapter{タイトル} % 第XX章 タイトル みたいになる
 
 \begin{flushright}名前\end{flushright} % 右側にちっちゃく表示される
@@ -65,7 +66,7 @@
 <a name="image">
 画像
 -----------
-```
+```tex
 \begin{figure}[位置指定]
   \centering
   % clipははみ出しを切り取るoption
@@ -83,7 +84,7 @@
 表
 -----------
 
-```
+```tex
 \begin{table}[位置指定]
   \begin{tabular}{c|c|c} 
     \hline
@@ -139,7 +140,7 @@ usepackageについては，
 必要のないモノまで含まれている可能性が高いので，
 吟味が必要かも知れませんね．
 
-```
+```tex
 %% documentclassのオプションでは
 %% フォントの大きさ，日本のB5を指定．
 %% openanyを使うと，章の開始位置が奇数ページのみでなくなる．
@@ -208,7 +209,7 @@ usepackageについては，
 \makeatletter
 \patchcmd{\@makechapterhead}{\vspace*{2\Cvs}}{}{}{}
 \makeatother
-
+pppp
 % textwidthをfullwidthに
 \setlength{\textwidth}{\fullwidth}
 
