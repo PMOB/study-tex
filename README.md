@@ -6,7 +6,7 @@ TeXに関する知識を共有するためのリポジトリ。
 - [Webリンク、書籍紹介](links.md)
 - [TeXの基本](basic.md)
 - [開発環境系（platex, latexmk, omake, ...）](environment.md)
-- [部誌書き方まとめ](yomu.md)
+- [部誌書き方など](https://github.com/PMOB/yomuyatu/wiki)（プライベートリポジトリです）
 - 自動化
 
 他にもあった方がいいと思うものはとりあえず追加していきましょう。
