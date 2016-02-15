@@ -5,11 +5,6 @@ URLは書籍なら無しでおk、amazonあたりのリンクあってもよし�
 Webページなら何年の記事か添えていただけるとハッピー
 
 
-書き方
------------
-[タイトル](https://www.cse.dendai.ac.jp/ 'altはあってもなくても')
-> 要約した内容。
-
 Webリンク
 -----------
 [l2tabu](http://ctan.org/tex-archive/info/l2tabu/)
@@ -38,8 +33,13 @@ Webリンク
 [TeX & LaTeX Advent Calendar 2015](http://www.adventar.org/calendars/929)
 > アドベントカレンダー2015。テーマは「今さら人に聞けない、TeXのキホン」。この中でも目を通したい記事があれば追記されたし。
 
+
 [LaTeX for Complete Novices](http://www.dickimaw-books.com/latex/novices/)
 > 英語ですが非常に詳しく載っていると思います。htmlとpdfあり。邦訳版ご存知でしたら追記願います。
+
+
+[LaTeX | WIKIBOOKS](https://en.wikibooks.org/wiki/LaTeX)
+> ここのwiki作るときに見た。激しく見た。
 
 
 書籍
