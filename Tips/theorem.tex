@@ -1,0 +1,103 @@
+\documentclass[a4j]{jsarticle}
+\usepackage{url}
+\usepackage{amsmath, amssymb, amsthm}
+
+\newtheoremstyle{plain}% style name
+{16pt}% above space
+{16pt}% below space
+{}% body font
+{}% indent
+{\bfseries}% head font
+{}% head punctuation
+{\newline}% head space
+{}% head spec
+
+\theoremstyle{plain}
+
+\renewcommand{\proofname}{証明}
+
+\newtheorem{definition}{定義}[section]
+\newtheorem{axiom}{公理}[section]
+\newtheorem{theorem}{定理}[section]
+\newtheorem{proposition}[theorem]{命題}
+\newtheorem{lemma}[theorem]{補題}
+\newtheorem{corollary}[theorem]{系}
+
+
+\begin{document}
+\section{定義とか公理とか}
+\begin{axiom}[コルモゴロフの確率の公理]
+  確率空間\((\Omega, F, P)\)について、
+\begin{enumerate}
+  \item \(P(E) \in \mathbb{R}, P(E) \geq 0 \hspace{16pt} \forall E \in F\)
+  \item \(P(\Omega) = 1\)
+  \item 可算個の排反事象\(E_1, E_2, \ldots\)について、
+  \begin{align*}
+    P\left(\bigcup_{i=1}^{\infty}E_i\right) &= \sum_{i=1}^{\infty}P(E_i)
+  \end{align*}
+\end{enumerate}
+  となる。
+\end{axiom}
+
+\begin{definition}[周辺確率: Marginal probability]
+  \label{def:marginal_p}
+  事象\(A\)が発生する確率を事象\(A\)についての周辺確率といい、
+  \(P(A)\)で表す。
+\end{definition}
+\begin{definition}[結合確率: Joint probability]
+  \label{def:joint_p}
+  事象\(A, B\)がどちらも発生する確率を事象\(A, B\)についての結合確率といい、
+  \(P(A \cap B)\)または\(P(A, B)\)で表す。
+\end{definition}
+\begin{definition}[条件付き確率: Conditional probability]
+  \label{def:conditional_p}
+  事象\(B (P(B) > 0) \)が起こるという条件のもとで
+  事象\(A\)が起こる確率を条件付き確率といい、
+  \(P(A \mid B)\)または\(P_B(A)\)で表す。
+  条件付き確率\(P(A \mid B)\)は以下の式で定義される。
+\begin{align*}
+  P(A \mid B) &= \dfrac{P(A \cap B)}{P(B)}
+\end{align*}
+\end{definition}
+
+\begin{proposition}
+  \(A, B \in F\)が\(A \subset B\)のとき、\(P(A) \geq P(B)\)となる。
+\end{proposition}
+\begin{proof}
+\begin{align*}
+  A &= B \cup (A \cap B^c)
+  && \because A \subset B \\
+  P(A) &= P(B \cup (A \cap B^c)) \\
+  P(A) &= (P(B) + P(A \cap B^c)) - P(B \cap (A \cap B^c)) \\
+  P(A) &= P(B) + P(A \cap B^c)
+  && \because B \cap B^c = \phi \\
+\end{align*}
+確率の公理1より確率は非負であるため、
+\begin{align*}
+  P(A) &\geq P(B)
+\end{align*}
+\end{proof}
+
+\begin{theorem}[ベイズの定理]
+  \label{thm:bayes}
+  事象Aについて、
+  \begin{itemize}
+    \item 事前確率を\(P(A)\)
+    \item 事象\(B\)が起きた後の事後確率を\(P(A \mid B)\)
+  \end{itemize}
+  とするとき、事後確率\(P(A \mid B)\)は以下のように表せる。
+\begin{align*}
+  P(A \mid B) &= \dfrac{P(B \mid A)P(A)}{P(B)}
+\end{align*}
+\end{theorem}
+
+\begin{proof}
+\begin{align*}
+  P(A \mid B) &= \dfrac{P(A \cap B)}{P(B)}
+  && \because 定義\ref{def:conditional_p}\\
+  P(A \cap B) &= P(A \mid B)P(B) \\
+  P(B \cap A) &= P(B \mid A)P(A) \\
+  P(A \mid B) &= \dfrac{P(B \mid A)P(A)}{P(B)} \\
+\end{align*}
+\end{proof}
+\end{document}
