@@ -1,7 +1,9 @@
+% いちいち説明するのめんどいので体で覚えるのじゃ
 \documentclass[a4j]{jsarticle}
-\usepackage{url}
+% theorem系の使用にはamsthm
 \usepackage{amsmath, amssymb, amsthm}
 
+% theorem系環境の設定を弄れる。
 \newtheoremstyle{plain}% style name
 {16pt}% above space
 {16pt}% below space
@@ -12,16 +14,29 @@
 {\newline}% head space
 {}% head spec
 
+% thoremstyleの選択
+% 随時変更できます
 \theoremstyle{plain}
 
+% 引数なしproof環境でのデフォルト表示
 \renewcommand{\proofname}{証明}
 
+% theorem系環境の設定
+% \newtheorem{envname}{表示名}[親カウンタ]
+% \newtheorem{envname}[同期カウンタ]{表示名}
+% 親カウンタを指定した場合はカウンタに親カウンタが付属します
+% カウンタリセットも親カウンタと同タイミング
+% 同期カウンタを指定した場合は同期カウンタと同じカウンタを使います。
 \newtheorem{definition}{定義}[section]
 \newtheorem{axiom}{公理}[section]
 \newtheorem{theorem}{定理}[section]
 \newtheorem{proposition}[theorem]{命題}
 \newtheorem{lemma}[theorem]{補題}
 \newtheorem{corollary}[theorem]{系}
+% ここでは定義、公理、定理はセクションカウンタが付属し、
+% セクションごとにリセット。
+% 定理、命題、補題、系は同期しているので
+% 定理1.1のあとに命題を設定すると命題1.2となる
 
 
 \begin{document}
