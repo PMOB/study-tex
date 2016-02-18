@@ -42,17 +42,17 @@ latexmk -pvc hogehoge.tex &> /dev/null &
 
 あと、latexmkは`.latexmkrc`を参照します。
 参照順は
-```
-/opt/local/share/latexmk/LatexMk
-/usr/local/share/latexmk/LatexMk
-/usr/local/lib/latexmk/LatexMk
-/opt/local/share/latexmk/latexmkrc
-/usr/local/share/latexmk/latexmkrc
-/usr/local/lib/latexmk/latexmkrc
-~/.latexmkrc
-カレントディレクトリのlatexmkrc or .latexmkrc
-latexmk -r で指定されたファイル
-```
+
+0. `/opt/local/share/latexmk/LatexMk`
+0. `/usr/local/share/latexmk/LatexMk`
+0. `/usr/local/lib/latexmk/LatexMk`
+0. `/opt/local/share/latexmk/latexmkrc`
+0. `/usr/local/share/latexmk/latexmkrc`
+0. `/usr/local/lib/latexmk/latexmkrc`
+0. `~/.latexmkrc`
+0. カレントディレクトリの`latexmkrc or .latexmkrc`
+0. `latexmk -r`で指定されたファイル
+
 です。参照の度に上書きする。スコープの広いものには基本的な設定をする。
 カレントディレクトリにはプロジェクトの設定をする。
 `-r`オプションを使うような（普段使わない）ものは本ビルド用のビルドオプションを書く感じ。
