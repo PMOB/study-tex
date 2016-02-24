@@ -20,7 +20,7 @@ SIPが効いてるのでusr以下に入れるとかやめような。
 
 ```sh
 sudo mkdir /opt/homebrew
-sudo chouwn <uname>:staff /opt/homebrew
+sudo chouwn `whoami`:staff /opt/homebrew
 curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C /opt/homebrew
 ```
 
