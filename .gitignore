@@ -1,11 +1,23 @@
-# built document
-**/*.pdf
-
-# what tha fuq are these
+### ignore intermediate file
+# latex
 **/*.dvi
 **/*.aux
+**/*.fls
 **/*.log
+**/*.fdb_latexmk
 
-# database for bibliographies
-**/*.blg
+# index
+**/*.ilg
+**/*.ind
+**/*.idx
+**/*.toc
+
+# hyperref
+**/*.out
+
+# bibtex
 **/*.bbl
+**/*.blg
+
+# dist
+**/*.pdf
