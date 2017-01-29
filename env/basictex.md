@@ -4,33 +4,10 @@
 
 ## homebrew入れよう
 
-homebrewいいぞ
-
-### El Capitan(OSX ver10.11)未満のボーイズエンドガールズ
-
 ```sh
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-はい。
-
-### えるたそ以降のレイディズエンドジェントルメン
-
-SIPが効いてるのでusr以下に入れるとかやめような。
-
-```sh
-sudo mkdir /opt/homebrew
-sudo chouwn `whoami`:staff /opt/homebrew
-curl -L https://github.com/Homebrew/homebrew/tarball/master | tar xz --strip 1 -C /opt/homebrew
-```
-
-ついでに`/etc/path`の先頭に`/opt/homebrew/bin`追記してちょ
-
-最後にアプデ
-
-```sh
-brew update
-brew upgrade
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ brew update
+$ brew upgrade
 ```
 
 ## 必要なものを入れよう
