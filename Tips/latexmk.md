@@ -90,7 +90,7 @@ $pdf_mode = 3;
 | `$max_repeat` | ソースの変更なしに繰り返せるコンパイル回数。既定値5 |
 | `$new_viewer_always` | `-pvc`オプションで走ってる時毎回プレビュワーを起動するかの設定<br>既定値0。0ならプレビュワーが走ってない時だけ開き直す。non-zeroで毎回強制的に開く |
 | `$out_dir` | 出力ディレクトリ |
-| `$pdf_mode` | 既定値0。0なら`$pdflatex`でpdfを生成、<br>1ならpdflatexでpdfを生成、<br>2なら`$ps2pdf`でpsからpdfを生成、<br>3なら`$dvipdf`でdviからpdfを生成する |
+| `$pdf_mode` | 既定値0。0なら`$pdflatex`でpdfを生成、<br>1なら`$pdflatex`でpdfを生成、<br>2なら`$ps2pdf`でpsからpdfを生成、<br>3なら`$dvipdf`でdviからpdfを生成する |
 | `$pdflatex` | texソースからpdfを生成するプログラムの設定 |
 | `$pdf_previewer` | pdfのプレビュープログラムの設定|
 
